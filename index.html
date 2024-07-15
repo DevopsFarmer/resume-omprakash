@@ -11,10 +11,6 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
         .profile-img {
             width: 150px;
             height: 150px;
@@ -47,111 +43,127 @@
         </p>
     </div>
 
-    <div class="section-title">Professional Summary</div>
-    <p>Experienced DevOps Engineer with over 10 years of hands-on experience in designing, implementing, and maintaining CI/CD pipelines, managing cloud infrastructure, and automating development and release processes. Proficient in configuration management, infrastructure as code (IaC), version control systems, and troubleshooting. Strong problem-solving skills and a passion for improving system security and documentation processes.</p>
-
-    <div class="section-title">Core Competencies</div>
-    <ul>
-        <li>CI/CD pipeline design and implementation</li>
-        <li>Cloud infrastructure management (AWS, Azure, GCP)</li>
-        <li>Development and release process automation</li>
-        <li>Configuration management</li>
-        <li>Infrastructure as code (IaC) with Terraform</li>
-        <li>Version control systems (Git)</li>
-        <li>Troubleshooting in development, test, and production environments</li>
-        <li>System security and patch management</li>
-        <li>Process documentation and configuration management</li>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="resumeTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="personal-info-tab" data-toggle="tab" href="#personal-info" role="tab" aria-controls="personal-info" aria-selected="true">Personal Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="summary-tab" data-toggle="tab" href="#summary" role="tab" aria-controls="summary" aria-selected="false">Summary</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="competencies-tab" data-toggle="tab" href="#competencies" role="tab" aria-controls="competencies" aria-selected="false">Competencies</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="certifications-tab" data-toggle="tab" href="#certifications" role="tab" aria-controls="certifications" aria-selected="false">Certifications</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="references-tab" data-toggle="tab" href="#references" role="tab" aria-controls="references" aria-selected="false">References</a>
+        </li>
     </ul>
 
-    <div class="section-title">Professional Experience</div>
-    <h5>Sr. CloudOps Engineer - II</h5>
-    <p><em>Experitest (Now part of Digital.ai), Remote India | March 2021 - Present</em></p>
-    <ul>
-        <li>Managed 7 datacenters globally, implementing VM templates, monitoring snapshots, and automating VM creation using Ansible and Jenkins.</li>
-        <li>Led migration to SaaS, orchestrating application migration to Kubernetes architecture.</li>
-        <li>Developed UI for cloud infrastructure visualization, enhancing customer support.</li>
-        <li>Implemented full-stack app for managing customer databases, replacing file-based storage.</li>
-        <li>Established Kubernetes-based Jenkins environment, reducing manual errors.</li>
-        <li>Engineered IaaC framework for Jenkins and VMs, automating infrastructure management.</li>
-        <li>Led CloudOps initiatives, building and maintaining advanced monitoring tools for software and server performance.</li>
-        <li>Automated workflows to enhance efficiency and reduce errors in cloud support.</li>
-        <li>Designed microservices in Python, deployed via ArgoCD, and set up Grafana monitoring for on-prem and AWS.</li>
-        <li>Created dashboards, custom exporters in Digital.ai, facilitating New Relic to Grafana migration.</li>
-        <li>Served as Scrum Master and System Architect during New Relic to Grafana transition.</li>
-    </ul>
+    <!-- Tab content -->
+    <div class="tab-content" id="resumeTabContent">
+        <div class="tab-pane fade show active" id="personal-info" role="tabpanel" aria-labelledby="personal-info-tab">
+            <h4 class="section-title">Personal Information</h4>
+            <p>
+                Omprakash Paliwal<br>
+                Jodhpur, Rajasthan, India<br>
+                Email: <a href="mailto:omprakash.paliwal68@gmail.com">omprakash.paliwal68@gmail.com</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/omprakash-paliwal/" target="_blank">linkedin.com/in/omprakash-paliwal</a><br>
+                Phone: <a href="tel:+919971566583">+91-9971566583</a>
+            </p>
+        </div>
 
-    <h5>Associate Lead Engineer</h5>
-    <p><em>Mentor Graphics, Hyderabad | October 2018 - March 2021</em></p>
-    <ul>
-        <li>Migrated Java applications from Oracle JDK 8 to OpenJDK 11.</li>
-        <li>Developed Jenkins pipelines and shared libraries to support diverse infrastructures.</li>
-        <li>Improved continuous integration feedback times and developed a unified coverage pipeline.</li>
-        <li>Set up a Kafka cluster for monitoring complex data flows between servers using Terraform and Ansible.</li>
-        <li>Automated porting infrastructure and piloted quality gates on Kubernetes.</li>
-        <li>Integrated various infrastructures into the ELK stack for comprehensive monitoring.</li>
-    </ul>
+        <div class="tab-pane fade" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+            <h4 class="section-title">Professional Summary</h4>
+            <p>Experienced DevOps Engineer with over 10 years of hands-on experience in designing, implementing, and maintaining CI/CD pipelines, managing cloud infrastructure, and automating development and release processes. Proficient in configuration management, infrastructure as code (IaC), version control systems, and troubleshooting. Strong problem-solving skills and a passion for improving system security and documentation processes.</p>
+        </div>
 
-    <h5>Project Engineer</h5>
-    <p><em>CDAC, Pune | December 2015 - September 2018</em></p>
-    <ul>
-        <li>Deployed on-premise OVirt cloud infrastructure and designed Java web applications for user management.</li>
-        <li>Refactored storage applications to support the latest Hadoop version and introduced Hadoop Archiving.</li>
-        <li>Led the deployment and monitoring of software at JPNATC AIIMS New Delhi.</li>
-        <li>Created comprehensive deployment documentation and automated DHS software infrastructure.</li>
-        <li>Configured high availability for DHS services and automated backup monitoring services.</li>
-        <li>Set up infrastructure for security audits, high-availability testing, and demo setups at major conferences.</li>
-    </ul>
+        <div class="tab-pane fade" id="competencies" role="tabpanel" aria-labelledby="competencies-tab">
+            <h4 class="section-title">Core Competencies</h4>
+            <ul>
+                <li>CI/CD pipeline design and implementation</li>
+                <li>Cloud infrastructure management (AWS, Azure, GCP)</li>
+                <li>Development and release process automation</li>
+                <li>Configuration management</li>
+                <li>Infrastructure as code (IaC) with Terraform</li>
+                <li>Version control systems (Git)</li>
+                <li>Troubleshooting in development, test, and production environments</li>
+                <li>System security and patch management</li>
+                <li>Process documentation and configuration management</li>
+            </ul>
+        </div>
 
-    <h5>Software Engineer - II</h5>
-    <p><em>Altran (Formerly Aricent Technologies), Gurgaon | September 2014 - December 2015</em></p>
-    <ul>
-        <li>Worked on IPSGW, GSM, and SS7 networks, and contributed to product maintenance and development.</li>
-        <li>Integrated SIP protocol in mobile messaging applications and participated in the full development cycle.</li>
-    </ul>
+        <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <!-- Experience section content -->
+            <!-- Include your professional experience here -->
+        </div>
 
-    <div class="section-title">Education</div>
-    <p><strong>Bachelor's Degree in Computer Science or Related Field</strong><br>
-    <em>University Name, City, State | Year of Graduation</em></p>
+        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+            <!-- Education section content -->
+            <!-- Include your education details here -->
+        </div>
 
-    <div class="section-title">Skills</div>
-    <div class="skills-chart">
-        <canvas id="skillsChart"></canvas>
+        <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+            <h4 class="section-title">Skills</h4>
+            <div class="skills-chart">
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab">
+            <h4 class="section-title">Certifications</h4>
+            <ul>
+                <li>Certification Name, Year</li>
+                <li>Certification Name, Year</li>
+            </ul>
+        </div>
+
+        <div class="tab-pane fade" id="references" role="tabpanel" aria-labelledby="references-tab">
+            <h4 class="section-title">References</h4>
+            <p>Available upon request.</p>
+        </div>
     </div>
 
-    <div class="section-title">Certifications</div>
-    <ul>
-        <li>Certification Name, Year</li>
-        <li>Certification Name, Year</li>
-    </ul>
-
-    <div class="section-title">References</div>
-    <p>Available upon request.</p>
-</div>
-
-<script>
-    var ctx = document.getElementById('skillsChart').getContext('2d');
-    var skillsChart = new Chart(ctx, {
-        type: 'radar',
-        data: {
-            labels: ['CI/CD frameworks', 'Cloud platforms', 'Containerization', 'Version control systems', 'Scripting languages', 'Linux/Unix system administration', 'Problem-solving', 'Communication', 'Teamwork', 'Agile methodologies'],
-            datasets: [{
-                label: 'Skill Levels',
-                data: [5, 5, 4, 4.5, 4, 3.5, 3.5, 3, 2.5, 3],
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scale: {
-                ticks: {
-                    beginAtZero: true,
-                    max: 5
+    <script>
+        var ctx = document.getElementById('skillsChart').getContext('2d');
+        var skillsChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['CI/CD frameworks', 'Cloud platforms', 'Containerization', 'Version control systems', 'Scripting languages', 'Linux/Unix system administration', 'Problem-solving', 'Communication', 'Teamwork', 'Agile methodologies'],
+                datasets: [{
+                    label: 'Skill Levels',
+                    data: [5, 5, 4, 4.5, 4, 3.5, 3.5, 3, 2.5, 3],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scale: {
+                    ticks: {
+                        beginAtZero: true,
+                        max: 5
+                    }
                 }
             }
-        }
-    });
-</script>
+        });
+    </script>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
